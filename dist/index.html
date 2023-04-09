@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <script defer src="App.js"></script>
+  </head>
+  <body class="bg-gradient-to-r from-sky-500 to-indigo-500">
+    <div class="flex justify-center mt-28">
+      <form class="flex items-center">
+        <div class="mr-3 text-3xl font-bold">Search:</div>
+        <div class="relative w-full">
+          <input
+            class="bg-gray-50 border h-20 w-80 border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block pl-10 p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-700 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            id="search-box"
+            placeholder="City, County, Country"
+          />
+        </div>
+        <button
+          class="w-20 h-20 p-2.5 ml-2 text-sm font-medium text-blue-600 hover:text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          id="search-button"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="-2 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="text-7xl felx text-center mt-14 font-semibold">
+      How is the weather in your city?
+    </div>
+
+    <div class="mt-40 flex place-items-end justify-center space-x-9">
+      <div class="flex flex-col bg-blue-300 rounded-3xl p-4 w-full max-w-xs">
+        <div class="font-bold text-xl" id="city-name">Baia Mare</div>
+        <div class="font-medium text-gray-500" id="day">
+          Thursday 10 May 2020
+        </div>
+        <div
+          class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24"
+        >
+          <img
+            class="h-24 w-24"
+            src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+            id="how-img"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div id="how">Cloudy</div>
+        </div>
+        <div class="flex flex-row items-center justify-center mt-6">
+          <div class="font-medium text-6xl">
+            <div class="font-medium text-6xl" id="city-temp">24°</div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mt-6">
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">UV</div>
+            <div class="text-base text-gray-500" id="uv">8</div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Humidity</div>
+            <div class="text-base text-gray-500" id="humidity"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Wind</div>
+            <div class="text-base text-gray-500" id="wind"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-blue-300 rounded-3xl p-4 w-full max-w-xs">
+        <div class="font-bold text-xl" id="city-name-1">Baia Mare</div>
+        <div class="font-medium text-gray-500" id="day-1">
+          Thursday 10 May 2020
+        </div>
+        <div
+          class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24"
+        >
+          <img
+            class="h-24 w-24"
+            src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+            id="how-img-1"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div id="how-1">Cloudy</div>
+        </div>
+        <div class="flex flex-row items-center justify-center mt-6">
+          <div class="font-medium text-6xl">
+            <div class="font-medium text-6xl" id="city-temp-1">24°</div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mt-6">
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">UV</div>
+            <div class="text-base text-gray-500" id="uv-1">8</div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Humidity</div>
+            <div class="font-medium text-gray-500" id="humidity-1"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Wind</div>
+            <div class="text-base text-gray-500" id="wind-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-blue-300 rounded-3xl p-4 w-full max-w-xs">
+        <div class="font-bold text-xl" id="city-name-2">Baia Mare</div>
+        <div class="text-base text-gray-500" id="day-2">
+          Thursday 10 May 2020
+        </div>
+        <div
+          class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24"
+        >
+          <img
+            class="h-24 w-24"
+            src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+            id="how-img-2"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div id="how-2">Cloudy</div>
+        </div>
+        <div class="flex flex-row items-center justify-center mt-6">
+          <div class="font-medium text-6xl">
+            <div class="font-medium text-6xl" id="city-temp-2">24°</div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mt-6">
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">UV</div>
+            <div class="text-base text-gray-500" id="uv-2">8</div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Humidity</div>
+            <div class="text-base text-gray-500" id="humidity-2"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Wind</div>
+            <div class="text-base text-gray-500" id="wind-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-blue-300 rounded-3xl p-4 w-full max-w-xs">
+        <div class="font-bold text-xl" id="city-name-3">Baia Mare</div>
+        <div class="text-base text-gray-500" id="day-3">
+          Thursday 10 May 2020
+        </div>
+        <div
+          class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24"
+        >
+          <img
+            class="h-24 w-24"
+            src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+            id="how-img-3"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div id="how-3">Cloudy</div>
+        </div>
+        <div class="flex flex-row items-center justify-center mt-6">
+          <div class="font-medium text-6xl">
+            <div class="font-medium text-6xl" id="city-temp-3">24°</div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mt-6">
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">UV</div>
+            <div class="text-base text-gray-500" id="uv-3">8</div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Humidity</div>
+            <div class="text-base text-gray-500" id="humidity-3"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="font-medium text-base">Wind</div>
+            <div class="text-base text-gray-500" id="wind-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
